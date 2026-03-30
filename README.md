@@ -11,7 +11,7 @@ dentro de package.json colacar o seguinte:
     "lint": "next lint"
 },
 
-na pasta raiz (PROJETO-NOVO), no terminal 
+na pasta raiz (julia-einsfeld), no terminal 
 npx gitignore node
 git init
 
