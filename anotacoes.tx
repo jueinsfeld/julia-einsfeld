@@ -1,0 +1,45 @@
+Júlia, parabéns pela dedicação aos estudos!
+
+Você trouxe pontos importantes sobre as estratégias de geração de páginas no Next.js, como o uso de getStaticProps para páginas estáticas (SSG) e a menção ao SSR.
+
+Para complementar o que você aprendeu, é interessante aprofundarmos um pouco mais. O getStaticProps é realmente fundamental para a Geração Estática Estática (SSG), onde as páginas são geradas no momento da build e servidas como arquivos estáticos. Isso é ótimo para performance, pois o conteúdo já está pronto para ser entregue.
+
+Além disso, a aula também abordou o getStaticPaths, que trabalha em conjunto com o getStaticProps quando temos páginas estáticas que dependem de dados dinâmicos, como posts de um blog. Ele define quais "caminhos" (paths) devem ser gerados estaticamente no momento da build. Você mencionou que ele pode vir vazio ou com alguns itens, e isso é um bom ponto: se ele vier vazio, o Next.js pode gerar as páginas sob demanda no primeiro acesso, ou você pode especificar quais páginas devem ser geradas previamente.
+
+Outro conceito importante que você mencionou é o Incremental Static Regeneration (ISR), que se torna possível com o atributo revalidate. Com o ISR, as páginas são geradas estaticamente, mas podem ser atualizadas em intervalos definidos, sem a necessidade de uma nova build completa. Isso permite ter o benefício da performance do SSG com a capacidade de ter conteúdo mais fresco.
+
+Por fim, sobre o SSR (Server-Side Rendering), que utiliza getServerSideProps, ele é ideal para páginas que precisam de dados sempre atualizados a cada requisição. A página é renderizada no servidor a cada acesso, garantindo que o usuário sempre veja o conteúdo mais recente. E sim, quando você cria arquivos dentro da pasta api, eles se tornam API Routes, que são executadas no lado do servidor e funcionam de forma semelhante ao SSR, mas para criar endpoints de API.
+
+Compreender essas estratégias ajuda a escolher a melhor abordagem para cada parte da sua aplicação, equilibrando performance e atualização de conteúdo.
+
+começa criando a pasta (direto no pc)
+abre no vscode, abre o terminal 
+npm init -y
+npm install next react react-dom 
+
+dentro de package.json colacar o seguinte:
+"scripts":{
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+},
+
+na pasta raiz (julia-einsfeld), no terminal 
+npx gitignore node
+git init
+
+
+cria uma pasta "pages"
+arquivo index.js
+    cria function HomePage
+
+roda npx next dev
+
+com o botão direito no explorer, seleciona Generate .editorconfig
+altera o indent_size para 2 e o insert_final_newline para true
+
+
+cria outra page (sobre.js)
+
+cria a pagina 404
